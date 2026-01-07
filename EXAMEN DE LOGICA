@@ -1,0 +1,206 @@
+Ejercicios de Java Básico
+Repositorio de Ejercicios de Lógica de Programación
+
+Estos ejercicios se realizan contestando las preguntas, sin código.
+🧠 Ejercicio 1: Hola usuario
+Plantación:
+Quieres que el programa salude al usuario por su nombre.
+
+Piensa:
+¿Cómo se guarda un texto que escribe el usuario?
+¿Cómo se guarda un texto? Se utiliza una variable de tipo cadena de texto (string).
+
+¿Cómo se muestra un mensaje por pantalla?
+¿Cómo se muestra un mensaje? Mediante una instrucción de salida o impresión System.out.println("TEXTO");
+
+¿Cómo unir (concatenar) el texto “Hola” con el nombre?
+¿Cómo unir (concatenar)? Usando un operador de unión (comúnmente el símbolo + o una coma ,).  System.out.println(" TEXTO " + VARIABLE);
+
+Reto:
+Imagina que el usuario escribe “Carlos”. ¿Qué debería mostrar el programa?
+System.out.println(" Hola " + nombre); = Hola Carlos
+
+🧠 Ejercicio 2: Suma de dos números
+
+Plantación:
+El introducir dos números, el programa debe mostrar su usuario suma.
+
+Piensa:
+¿Qué tipo de datos representan los números?
+¿Qué tipo de datos son? Son tipos de datos numéricos (pueden ser enteros o flotantes/decimales).
+
+¿Qué operación matemática debes hacer?
+¿Qué operación hacer? Una suma aritmética (+).
+
+¿Cómo mostrar el resultado junto con un mensaje claro?
+¿Cómo mostrar el resultado? Concatenando un texto explicativo con la variable del resultado, por ejemplo: "La suma es: 20".
+
+Reto:
+Si el usuario escribe 8 y 12, ¿qué resultado esperas que aparezca?
+Reto: Si el usuario escribe 8 y 12, el resultado es 20.
+
+🧠 Ejercicio 3: Número par o impar
+
+Plantación:
+Determinar si un número es par o impar.
+
+Piensa:
+¿Qué significa que un número sea par? (¿Qué operación lo demuestra?)
+¿Qué significa que sea par? Que es divisible entre 2. La operación que lo demuestra es el módulo (residuo de la división); si el residuo es 0, es par.
+
+¿Qué pasa si el número no cumple esa condición?
+¿Si no cumple la condición? Entonces es un número impar.
+
+¿Cómo plantearías la decisión en palabras, antes del código?
+Planteamiento en palabras: "Si el resto de dividir el número entre 2 es igual a 0, entonces es par; de lo contrario, es impar".
+
+Reto:
+Haz una lista rápida de 5 números y marca cuáles son pares e impares. ¿Cómo lo decide mentalmente?
+Reto:
+2 (Par)
+7 (Impar)
+10 (Par)
+15 (Impar)
+22 (Par)
+Mentalmente: Divido entre 2 y veo si sobra algo.
+
+🧠 Ejercicio 4: Mayor de dos números
+
+Plantación:
+El programa debe decir cuál de los dos números es mayor o si son iguales.
+
+Piensa:
+¿Qué comparaciones necesitas hacer entre los dos valores?
+¿Qué comparaciones necesitas? Necesitas usar operadores relacionales: A > B, A < B y A == B.
+
+¿Qué resultados posibles existen?
+¿Qué resultados existen? Tres: que el primero sea mayor, que el segundo sea mayor o que sean iguales.
+
+¿Qué mensaje mostrarías en cada caso?
+¿Qué mensaje mostrarías? "El primer número es mayor", "El segundo número es mayor" o "Ambos son iguales".
+
+Reto:
+Si tienes los números 10 y 15, ¿qué debería decir el programa?
+Reto: Si los números son 10 y 15, el programa debería decir: "El 15 es mayor" (o que el segundo es mayor).
+
+
+🧠 Ejercicio 5: Tabla de multiplicar
+
+Plantación:
+Mostrar la tabla de multiplicar de un número del 1 al 10.
+
+Piensa:
+¿Qué patrón sigue una tabla de multiplicar?
+¿Qué patrón sigue? Es el número base multiplicado por una secuencia incremental (1, 2, 3...).
+
+¿Qué sucede si el número cambia?
+¿Qué sucede si el número cambia? Solo cambia el multiplicando, pero la secuencia del multiplicador (1 al 10) se mantiene.
+
+¿Cómo repetirías una acción varias veces (repetición/loop)?
+¿Cómo repetirías la acción? Usando una estructura de bucle o ciclo como un Para/For o Mientras/While.
+
+Reto:
+Imagina que el número es 4. Enumera mentalmente: 4×1, 4×2, 4×3... hasta 4×10. ¿Qué notas que se repite?
+Reto: 4x1=4, 4x2=8... Se repite el número 4 y la operación de multiplicar; lo que cambia es el número por el que multiplicas.
+
+🧠 Ejercicio 6: Contador del 1 al N
+
+Plantación:
+Mostrar todos los números desde el 1 hasta un número que el usuario indique.
+
+Piensa:
+¿Qué ocurre si el usuario pone 5?
+¿Qué ocurre si el usuario pone 5? El programa muestra: 1, 2, 3, 4, 5.
+
+¿Cómo puedes generar una secuencia de números consecutivos?
+¿Cómo generar la secuencia? Iniciando una variable en 1 e incrementándola de uno en uno en cada vuelta de un ciclo.
+
+
+¿Qué variable controlaría cuántas veces se repite el proceso?
+¿Qué variable controlaría el proceso? Una variable contador llamada i.
+
+
+Reto:
+Hazlo tú: cuenta del 1 al número que quieras, pero imagina que una máquina lo hace. ¿Qué instrucciones necesitaría?
+Reto: Instrucciones para la máquina: "Empieza en 1. Mientras el número sea menor o igual a N, muéstralo y súmale 1. Detente cuando pases de N".
+
+
+🧠 Ejercicio 7: Suma acumulativa
+
+Plantación:
+Calcular la suma de los números del 1 al N.
+
+Piensa:
+¿Qué patrón sigue la suma? (1+2+3+...+N)
+¿Qué patrón sigue? Es una acumulación. El resultado actual es la suma del anterior más el nuevo número de la secuencia.
+
+
+¿Podrías ir sumando número por número?
+¿Podrías ir sumando uno por uno? Sí, es la forma lógica de hacerlo en programación.
+
+
+¿Qué necesitas guardar durante el proceso?
+¿Qué necesitas guardar? Una variable llamada acumulador que empiece en 0.
+
+
+Reto:
+Si N = 5 → 1 + 2 + 3 + 4 + 5 = 15 ¿Cómo podrías llegar a ese 15 sin hacer la cuenta completa cada vez?
+Reto: Sin hacer la cuenta completa cada vez, usas el acumulador: total = total + nuevo_numero.
+
+
+🧠 Ejercicio 8: Promedio de tres números
+
+Plantación:
+Calcular el promedio de tres valores numéricos.
+
+Piensa:
+¿Qué operación define el promedio?
+¿Qué operación lo define? La suma de todos los elementos dividida entre la cantidad de elementos.
+
+¿Qué pasos necesitas para calcularlo (sumar → dividir)?
+¿Qué pasos necesitas? 1. Sumar los tres números. 2. Dividir el resultado entre 3.
+
+¿Qué tipo de resultado esperas (entero o decimal)?
+¿Qué tipo de resultado esperas? Generalmente un decimal (flotante), ya que la división no siempre es exacta.
+
+Reto:
+Si tienes 70, 80 y 90, ¿qué promedio obtienes?
+Reto: (70 + 80 + 90) / 3 = 240 / 3 = 80.
+
+🧠 Ejercicio 9: Calificación aprobatoria
+
+Plantación:
+Decidir si una calificación es aprobatoria o reprobatoria.
+
+Piensa:
+¿Cuál es el valor mínimo para aprobar?
+¿Cuál es el valor mínimo? Depende del sistema, pero usualmente es 60 o 70.
+
+¿Qué comparación necesitas hacer?
+¿Qué comparación necesitas? calificacion >= minimo_aprobatorio.
+
+¿Cómo expresas el resultado como texto (“Aprobado” o “Reprobado”)?
+¿Cómo expresas el resultado? Usando un condicional SI/IF.
+
+Reto:
+Si el usuario escribe 59, ¿qué diría tu programa? ¿Y si escribe 60?
+Reto: Si escribe 59: "Reprobado". Si escribe 60: "Aprobado".
+
+🧠 Ejercicio 10: Conversor de temperatura
+Plantación:
+Convertir grados Celsius a Fahrenheit.
+
+Piensa:
+¿Qué fórmula necesitas aplicar?
+¿Qué fórmula necesitas? F = (C * 9/5) + 32.
+
+¿Qué pasos seguirías para obtener el resultado?
+¿Qué pasos seguirías? Multiplicar por 1.8 (o 9/5) y luego sumar 32.
+
+¿Qué pasa si el usuario ingresa un número negativo?
+¿Qué pasa si el número es negativo? La fórmula funciona igual, se aplican leyes de signos.
+
+Reto:
+Si C = 0 → F = (0×9/5)+32 → 32 ¿Puedes hacerlo con otro valor, por ejemplo, C=100?
+Reto: Si C = 100 → (100 * 9/5) + 32 = 180 + 32 = 212°F.
+
